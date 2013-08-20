@@ -23,6 +23,7 @@ Vex.Flow.Test.Document.measure = function(options, contextBuilder) {
   CustomBackend.prototype.parse = function(arg) { };
   CustomBackend.prototype.isValid = function() { return true; };
   CustomBackend.prototype.getNumberOfMeasures = function() { return 2; };
+  CustomBackend.prototype.getStaveConnectors = function() { return []; };
   CustomBackend.prototype.getMeasure = function(i) {
     var time = {num_beats: 4, beat_value: 4};
     var measure = new Vex.Flow.Measure({time: time});
